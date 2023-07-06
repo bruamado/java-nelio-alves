@@ -1,7 +1,7 @@
 import java.util.Locale;
 
 
-public class exercicio_aula_23 {
+public class Exercicio_aula_23 {
 
 	public static void main(String[] args) {
 		String product1 = "Computer";
