@@ -1,25 +1,23 @@
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Product_OLD;
+import entities.Product;
 
-public class Aula_68 {
+public class Aula_77 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Product_OLD product = new Product_OLD();
 		
 		System.out.println("Enter product data: ");
 		
 		System.out.print("Name: ");
-		product.name = sc.nextLine();
+		String name = sc.nextLine();
 		
 		System.out.print("Price: ");
-		product.price = sc.nextDouble();
+		double price = sc.nextDouble();
 		
-		System.out.print("Quantity in stock: ");
-		product.quantity = sc.nextInt();
+		Product product = new Product(name, price);
 		
 		System.out.println();
 		System.out.println("Product data: " + product);

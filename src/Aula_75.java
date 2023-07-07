@@ -1,6 +1,6 @@
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Product2;
+import entities.Product;
 
 public class Aula_75 {
 
@@ -20,7 +20,7 @@ public class Aula_75 {
 		System.out.print("Quantity in stock: ");
 		int quantity = sc.nextInt();
 		
-		Product2 product = new Product2(name, price, quantity);
+		Product product = new Product(name, price, quantity);
 		
 		System.out.println();
 		System.out.println("Product data: " + product);
