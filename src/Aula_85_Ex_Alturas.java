@@ -17,8 +17,11 @@ public class Aula_85_Ex_Alturas {
 			int idade = sc.nextInt();
 			System.out.print("Altura: ");
 			double altura = sc.nextDouble();
+			System.out.print("Email: ");
+			String email = sc.next();
 			
-			pessoaVect[i] = new Pessoa(nome, idade, altura);
+			
+			pessoaVect[i] = new Pessoa(nome, idade, altura, email);
 		}
 		sc.close();
 		

@@ -4,11 +4,13 @@ public class Pessoa {
 	private String nome;
 	private int idade;
 	private double altura;
+	private String email;
 	
-	public Pessoa(String nome, int idade, double altura) {
+	public Pessoa(String nome, int idade, double altura, String email) {
 		this.nome = nome;
 		this.idade = idade;
 		this.altura = altura;
+		this.email = email;
 	}
 	
 	public String getNome() {
@@ -33,6 +35,14 @@ public class Pessoa {
 	
 	public void setAltura(double altura) {
 		this.altura = altura;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 }
