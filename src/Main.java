@@ -1,26 +1,23 @@
+//import java.util.Scanner;
+
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-		int x;
-		String s1, s2, s3;
+		Scanner sc = new Scanner(System.in);	
+		System.out.println("Quantos números irá inserir?");
+		int[] intVetor = new int[sc.nextInt()];
 		
-		x = sc.nextInt();
-		s1 = sc.nextLine();
-		s2 = sc.nextLine();
-		s3 = sc.nextLine();
-		
-		System.out.printf("%nDados digitados:%n%n");
-		System.out.println(x);
-		System.out.println(s1);
-		System.out.println(s2);
-		System.out.println(s3);
-		
-		System.out.println(args);
-		
+		for (int i=0; i<intVetor.length; i++) {
+			System.out.print("Numero " + (i+1) + ": ");
+			intVetor[i] = sc.nextInt();
+		}
 		sc.close();
+		
+		for (int num : intVetor) {
+			System.out.printf("%d, ", num);
+		}
 	}
 }
