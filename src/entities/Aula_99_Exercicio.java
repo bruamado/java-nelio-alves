@@ -29,13 +29,41 @@ public class Aula_99_Exercicio {
 			
 			employees.add(new Employee_Aula99(id, name, salary));
 		}
-		sc.close();
 		
 		System.out.println();
+		System.out.print("Enter the employee id that will have salary increase: ");
+		int idToIncrease = sc.nextInt();
+		
+		Integer index = position(employees, idToIncrease);
+		if (index != null) {
+			System.out.print("Enter the percentage: ");
+			employees.get(index).increaseSalary(sc.nextDouble());			
+		}else {
+			System.out.println("This id does not exist!");			
+		}
+		
+		sc.close();
+		/*
+		 * Uma outra forma alternativa de encontrar o id na lista de funcionarios, seria essa:
+		 *	Employee_Aula99 emp = list.strem().filter(x -> x.getId() == id).findFirst().orElse(null);
+		 */
+		
+		System.out.println();
+		
+		System.out.println("List of employees:");
 		for (Employee_Aula99 employee : employees) {
-			System.out.println(employee.getName());
+			System.out.println(employee);
 		}
 		
 	}
-
+	
+	public static Integer position(List<Employee_Aula99> list, int id) {
+		//Finds if the id existis in elements, and return it's index.
+		for (int i=0; i<list.size(); i++) {
+			if (list.get(i).getId() == id) {
+				return i;
+			}
+		}
+		return null;
+	}
 }
