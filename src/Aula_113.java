@@ -24,8 +24,10 @@ public class Aula_113 {
 		System.out.println("nextWeekInstant: " + nextWeekInstant);
 		
 		Duration t2 = Duration.between(pastWeekLocalDate, d04.atTime(0, 0));
+		System.out.println(t2);
 		Duration t1 = Duration.between(pastWeekLocalDate, d05);
 		System.out.println("t1 dias = " + t1.toDays());
+		
 	}
 
 }
