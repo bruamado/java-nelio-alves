@@ -33,6 +33,6 @@ public class ChessMatch {
 		board.placePiece(new Pawn(board, Color.BLACK), new Position(4, 2));
 		board.placePiece(new Knight(board, Color.BLACK), new Position(2, 4));
 		board.placePiece(new Bishop(board, Color.BLACK), new Position(3, 1));
-		board.placePiece(new King(board, Color.BLACK), new Position(0, 4));
+		board.placePiece(new King(board, Color.BLACK), new Position(4, 1));
 	}
 }
