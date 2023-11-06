@@ -3,3 +3,7 @@ bin/
 .metadata/
 *.classpath
 *.project
+
+# IntelliJ
+*.iml
+out/
